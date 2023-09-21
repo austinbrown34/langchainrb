@@ -31,6 +31,12 @@ module Langchain
   end
 end
 
+module OutputParsers
+  autoload :Base, "langchain/output_parsers/base"
+  autoload :StructuredOutputParser, "langchain/output_parsers/structured_output_parser"
+  autoload :OutputFixingParser, "langchain/output_parsers/output_fixing_parser"
+end
+
 module Agent
   autoload :Base, "agent/base"
   autoload :ChainOfThoughtAgent, "agent/chain_of_thought_agent/chain_of_thought_agent.rb"
